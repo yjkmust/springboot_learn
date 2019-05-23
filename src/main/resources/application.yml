@@ -1,0 +1,30 @@
+
+spring:
+  profiles:
+    active: dev
+
+---
+#开发环境配置
+spring:
+  profiles: dev
+
+server:
+  port: 1000
+
+
+---
+#测试环境配置
+spring:
+  profiles: test
+
+server:
+  port: 1001
+
+
+---
+#生产环境配置
+spring:
+  profiles: prod
+
+server:
+  port: 1002
